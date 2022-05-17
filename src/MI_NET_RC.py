@@ -58,7 +58,7 @@ def MI_NET_RC_cv(data_dir_,Datasets,replications,folds):
             totalTime = time.perf_counter() - startTime
             iterVals=pd.DataFrame([[dataSet,rep,fold, totalTime,trainAUC,testAUC,train_acc,test_acc]], columns=results.columns)
             results = results.append(iterVals)
-            results.to_csv("Results/MI_NET_RC.csv")
+            #results.to_csv("Results/MI_NET_RC.csv")
         averageOfdata=pd.DataFrame([[dataSet,"Average","Average",results[results.data==dataSet].trainRuntime.mean(),results[results.data==dataSet].trainAUC.mean(),results[results.data==dataSet].testAUC.mean(),results[results.data==dataSet].trainAccuracy.mean(),results[results.data==dataSet].TestAccuracy.mean()]], columns=results.columns)
         results = results.append(averageOfdata)
         results.to_csv("Results/MI_NET_RC.csv")
