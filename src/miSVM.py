@@ -78,7 +78,7 @@ def miSVM_cv(data_dir,dataFiles,replications,folds):
                     trainAUC=roc_auc_score(trainLabels,train_predictions)
                     testAUC =roc_auc_score(testLabels,predictions)
                     
-                    trainRuntime = start_time-time.perf_counter()
+                    trainRuntime = time.perf_counter()-start_time
                     currentSolutionValues=pd.DataFrame([[dataName,rep,f_,trainRuntime,trainAUC,testAUC,accuracy]], columns=miSVM_results.columns)
                     miSVM_results = miSVM_results.append(currentSolutionValues)
                    
