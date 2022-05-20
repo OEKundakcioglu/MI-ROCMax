@@ -44,7 +44,7 @@ dataFiles = ["CorelAntique","CorelBattleships","CorelBeach","Mutagenesis1","Muta
 
 # miNET_cv(data_dir_= 'DATASETS',Datasets=dataFiles,replications=replications,folds=folds)
 
-MISVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
+# MISVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
-miSVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
+# miSVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
