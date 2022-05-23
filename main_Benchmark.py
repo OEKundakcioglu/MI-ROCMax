@@ -37,6 +37,7 @@ miSVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds
 # simpleMIL_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
 dataFiles = ["Musk1","Musk2","Tiger","Fox","Elephant","CorelAntique","CorelBattleships","CorelBeach","Mutagenesis1","Mutagenesis2"]
+
 MI_NET_cv(data_dir_= 'DATASETS',Datasets=dataFiles,replications=replications,folds=folds)
 
 MI_NET_RC_cv(data_dir_= 'DATASETS',Datasets=dataFiles,replications=replications,folds=folds)
