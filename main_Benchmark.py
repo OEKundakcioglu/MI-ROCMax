@@ -23,18 +23,20 @@ dataFiles = ["Musk1","Musk2","Tiger","Fox","Elephant","CorelAntique","CorelBattl
 replications=['1','2','3','4','5']
 folds=['1','2','3','4','5','6','7','8','9','10']
 
+dataFiles = ["Musk2","CorelAntique","CorelBattleships","CorelBeach","Mutagenesis1","Mutagenesis2"]
 MISVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
 miSVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
-cKNN_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
+# cKNN_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
-KNN_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
+# KNN_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
-EMDD_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
+# EMDD_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
-simpleMIL_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
+# simpleMIL_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
+dataFiles = ["Musk1","Musk2","Tiger","Fox","Elephant","CorelAntique","CorelBattleships","CorelBeach","Mutagenesis1","Mutagenesis2"]
 MI_NET_cv(data_dir_= 'DATASETS',Datasets=dataFiles,replications=replications,folds=folds)
 
 MI_NET_RC_cv(data_dir_= 'DATASETS',Datasets=dataFiles,replications=replications,folds=folds)
@@ -43,7 +45,4 @@ MI_NET_Attention_cv(data_dir_= 'DATASETS',Datasets=dataFiles,replications=replic
 
 miNET_cv(data_dir_= 'DATASETS',Datasets=dataFiles,replications=replications,folds=folds)
 
-MISVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
-
-miSVM_cv(data_dir='DATASETS',dataFiles=dataFiles,replications=replications,folds=folds)
 
